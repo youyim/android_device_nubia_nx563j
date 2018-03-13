@@ -1,3 +1,16 @@
-# android_device_nubia_nx563j-twrp
-For building TWRP for theNubia Z17(NX563J) only
+## How-to compile it:
 
+To build:
+
+```sh
+. build/envsetup.sh
+lunch omni_nx569j-eng
+make recoveryimage
+```
+
+TO flash
+
+```sh
+fastboot oem nubia_unlock NUBIA_NX563J
+fastboot flash recovery recovery.img
+```
